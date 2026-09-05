@@ -267,34 +267,3 @@ A identidade opera em duas camadas com regras distintas.
 **Camada de produto** — mapa, cards de rua, gráficos. Azul e creme como base, e verde, âmbar e vermelho liberados apenas onde há dado real de ocupação.
 
 Essa separação é o que dá força à cor no produto: como as cores de status nunca aparecem no material institucional, o usuário aprende rápido que ali cor significa informação, não decoração.
-
----
-
-## Mascote: Vaguinha
-
-![Vaguinha](mascote/vaguinha-atitude.svg)
-
-A Vaguinha **é a vaga**, não o carro. O carro é o usuário; a vaga é o que o Parô entrega. Um mascote-carrinho colocaria a marca no lugar errado da história.
-
-Ela usa o circunflexo da marca como boné e aparece sempre dentro da própria baia demarcada.
-
-### Estilo
-
-Contorno preto uniforme de 10 px, preenchimento chapado sem gradiente, tênis desproporcionalmente grandes. Sem sombra, sem textura, sem degradê.
-
-### Expressões
-
-| Arquivo             | Quando usar                                |
-| ------------------- | ------------------------------------------ |
-| `vaguinha-atitude`  | Uso institucional, capa, slides, adesivo   |
-| `vaguinha-feliz`    | Confirmação, vaga encontrada, fim de fluxo |
-| `vaguinha-dormindo` | Rua sem dado, resultado vazio, madrugada   |
-| `vaguinha-surpresa` | Erro, busca sem retorno, aviso             |
-
-### Onde ela ganha função
-
-Mascote sem função vira enfeite e some do projeto. Reserve a Vaguinha para os momentos em que a interface é fria e o usuário está frustrado: estado vazio, carregamento e mensagem de erro.
-
-### Restrição de cor
-
-A Vaguinha nunca aparece em verde, âmbar ou vermelho. Se a cor dela mudasse conforme a disponibilidade, o usuário passaria a ler a cor do personagem como informação, e ela competiria com o mapa. Ela pertence à camada de marca: creme, azul e preto, sempre.
