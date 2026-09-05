@@ -1,0 +1,78 @@
+/* Parô — tokens de design
+   Paleta extraída da capa oficial do projeto.
+   Uso: @import url("tokens/paro.css"); */
+
+:root {
+  /* --- Cores de marca --- */
+  --paro-creme:          #FFF9E3;
+  --paro-ceu:            #C3D2D7;
+  --paro-ceu-claro:      #D2DEDA;
+  --paro-ceu-escuro:     #BAC7CD;
+  --paro-azul:           #6EA8FF;
+  --paro-azul-texto:     #3D74D6;
+  --paro-concreto:       #75746E;
+  --paro-asfalto:        #32312C;
+
+  /* --- Cores de status de ocupação ---
+     Só podem ser usadas para representar dado real de vaga.
+     Nunca como enfeite. */
+  --paro-livre:          #00A86B;
+  --paro-apertado:       #F0A020;
+  --paro-lotado:         #E03B3B;
+  --paro-semdado:        #B4B2A8;
+
+  /* --- Limiares de status (taxa de ocupação) --- */
+  --paro-limiar-livre:    0.60;
+  --paro-limiar-apertado: 0.85;
+
+  /* --- Tipografia --- */
+  --paro-fonte: "Satoshi", system-ui, sans-serif;
+  --paro-fonte-mono: "JetBrains Mono", ui-monospace, monospace;
+  --paro-tracking-etiqueta: 0.18em;
+
+  /* --- Espaçamento (escala de 4px) --- */
+  --paro-esp-1:  4px;
+  --paro-esp-2:  8px;
+  --paro-esp-3:  12px;
+  --paro-esp-4:  16px;
+  --paro-esp-6:  24px;
+  --paro-esp-8:  32px;
+  --paro-esp-12: 48px;
+  --paro-esp-16: 64px;
+
+  /* --- Raios --- */
+  --paro-raio-sm:   8px;
+  --paro-raio-md:   12px;
+  --paro-raio-lg:   16px;
+  --paro-raio-full: 9999px;
+
+  --paro-borda: 1px solid rgba(50, 49, 44, 0.12);
+}
+
+/* Etiqueta: caixa alta com entreletra aberta, como na capa */
+.paro-etiqueta {
+  font-family: var(--paro-fonte);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: var(--paro-tracking-etiqueta);
+  font-size: 0.75rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paro-fundo:       var(--paro-asfalto);
+    --paro-superficie:  #3E3D37;
+    --paro-texto:       var(--paro-creme);
+    --paro-texto-fraco: #A8A69C;
+    --paro-borda: 1px solid rgba(255, 249, 227, 0.14);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --paro-fundo:       var(--paro-creme);
+    --paro-superficie:  #FFFFFF;
+    --paro-texto:       var(--paro-asfalto);
+    --paro-texto-fraco: #6B6A63;
+  }
+}

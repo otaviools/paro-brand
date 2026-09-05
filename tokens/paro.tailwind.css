@@ -1,0 +1,35 @@
+/* Parô — preset para Tailwind CSS v4
+   No v4 as cores são declaradas em CSS, não em JS.
+   Uso: cole no arquivo principal, depois do @import "tailwindcss". */
+
+@import "tailwindcss";
+
+@theme {
+  /* Marca */
+  --color-creme:      oklch(0.976 0.032 96);
+  --color-ceu:        oklch(0.836 0.017 216);
+  --color-ceu-claro:  oklch(0.879 0.014 175);
+  --color-azul:       oklch(0.730 0.128 259);
+  --color-azul-texto: oklch(0.585 0.146 262);
+  --color-concreto:   oklch(0.545 0.008 92);
+  --color-asfalto:    oklch(0.283 0.005 92);
+
+  /* Status de ocupação */
+  --color-livre:    oklch(0.630 0.145 162);
+  --color-apertado: oklch(0.750 0.145 70);
+  --color-lotado:   oklch(0.580 0.196 25);
+  --color-semdado:  oklch(0.750 0.008 92);
+
+  /* Tipografia */
+  --font-sans: "Satoshi", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --tracking-etiqueta: 0.18em;
+
+  /* Raios */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+}
+
+/* Gera automaticamente: bg-azul, text-asfalto, border-livre,
+   tracking-etiqueta, rounded-md e todas as demais utilitárias. */
