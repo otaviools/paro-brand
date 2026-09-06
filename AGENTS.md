@@ -18,7 +18,7 @@ Ponto essencial: o Parô entrega **previsão**, não garantia. Nenhum texto, tel
 
 1. **Não redesenhe ativos.** Use os arquivos deste repositório. Não recrie o logotipo, o símbolo ou os grafismos, nem os reconstrua em código.
 2. **Não altere as cores da marca.** Os valores do `tokens/paro.css` são a fonte da verdade.
-3. **Verde, âmbar e vermelho representam ocupação de vaga.** Nunca use essas cores como decoração, destaque genérico ou cor de marca.
+3. **Ocupação de vaga é comunicada por rótulo e padrão, não por cor.** Use rótulo textual mais preenchimento — sólido, hachura diagonal, hachura densa ou tracejado. Não introduza cores fora da paleta da marca para representar ocupação.
 4. **Não use emojis.** Para ícones, use a família [Lucide](https://lucide.dev/).
 5. **Não prometa encontrar vaga.** Escreva sobre probabilidade, chance e previsão.
 6. **Sempre exiba o horário da medição** ao mostrar dado de ocupação.
@@ -53,16 +53,16 @@ Concreto    #75746E   texto secundário
 Asfalto     #32312C   textos, estrutura, fundos escuros
 ```
 
-Status de ocupação, **exclusivos para dado real**:
-
-```
-Livre       #00A86B   até 60% de ocupação
-Apertado    #F0A020   60% a 85%
-Lotado      #E03B3B   acima de 85%
-Sem dado    #B4B2A8   trecho não medido
-```
-
 O creme e o asfalto são quentes de propósito. Não substitua por `#FFFFFF` nem por `#000000`.
+
+Estados de ocupação, **exclusivos para dado real**, comunicados por rótulo textual mais padrão de preenchimento — nunca por cor:
+
+```
+Livre       até 60% de ocupação    preenchimento sólido + rótulo
+Apertado    60% a 85%              hachura diagonal + rótulo
+Lotado      acima de 85%          hachura densa + rótulo
+Sem dado    trecho não medido     tracejado + rótulo
+```
 
 ---
 
@@ -114,7 +114,7 @@ Frases aprovadas da marca: *Menos volta, mais vaga.* · *Chegue sabendo.* · *A 
 
 ## Acessibilidade
 
-Status nunca é comunicado só por cor. Verde, âmbar e vermelho juntos são o pior caso para daltonismo, que afeta cerca de 8% dos homens. Cada estado precisa de um segundo sinal: preenchimento sólido, hachura diagonal, hachura densa ou tracejado, sempre com rótulo textual.
+Ocupação nunca é comunicada por cor. Cada estado se distingue por rótulo textual mais padrão de preenchimento — sólido, hachura diagonal, hachura densa ou tracejado. Isso também protege quem tem daltonismo, que afeta cerca de 8% dos homens.
 
 Valide o contraste pela WCAG. O `Azul Parô` não alcança contraste suficiente para texto pequeno sobre creme: use `Azul texto` nesse caso.
 

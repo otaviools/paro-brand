@@ -17,12 +17,6 @@
   /* Degradê de azul: do destaque ao azul de texto */
   --gradient-azul: linear-gradient(135deg, oklch(0.730 0.128 259) 0%, oklch(0.585 0.146 262) 100%);
 
-  /* Status de ocupação */
-  --color-livre:    oklch(0.630 0.145 162);
-  --color-apertado: oklch(0.750 0.145 70);
-  --color-lotado:   oklch(0.580 0.196 25);
-  --color-semdado:  oklch(0.750 0.008 92);
-
   /* Tipografia */
   --font-sans: "Satoshi", system-ui, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, monospace;

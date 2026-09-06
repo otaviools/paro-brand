@@ -53,38 +53,6 @@
         "$description": "Degradê de azul (135°), do destaque ao azul de texto. Fundos e realces. Nunca sobre logotipo, símbolo ou grafismos"
       }
     },
-    "status": {
-      "livre": {
-        "$type": "color",
-        "$value": "#00A86B",
-        "$description": "Ocupação até 60%"
-      },
-      "apertado": {
-        "$type": "color",
-        "$value": "#F0A020",
-        "$description": "Ocupação de 60% a 85%"
-      },
-      "lotado": {
-        "$type": "color",
-        "$value": "#E03B3B",
-        "$description": "Ocupação acima de 85%"
-      },
-      "semdado": {
-        "$type": "color",
-        "$value": "#B4B2A8",
-        "$description": "Trecho não medido"
-      }
-    },
-    "limiar": {
-      "livre": {
-        "$type": "number",
-        "$value": 0.6
-      },
-      "apertado": {
-        "$type": "number",
-        "$value": 0.85
-      }
-    },
     "fonte": {
       "principal": {
         "$type": "fontFamily",

@@ -65,7 +65,7 @@ Sem sombras pesadas. Uma borda de 1 px em `--paro-borda` separa melhor e carrega
 Elemento central do produto. Contém:
 
 - Nome da rua, 18 px Medium
-- Faixa de status com cor **e** hachura
+- Faixa de status com padrão de preenchimento **e** rótulo
 - Percentual em número grande, 48 px Black
 - Horário da última medição, 14 px, cor `concreto`
 
@@ -73,7 +73,7 @@ O horário é obrigatório. Sem ele o usuário assume tempo real, e o Parô entr
 
 ### Gráfico de ocupação por horário
 
-Barras verticais por faixa de 30 minutos, coloridas por status, com linha tracejada em 85% marcando o limiar de dificuldade.
+Barras verticais por faixa de 30 minutos, diferenciadas por padrão de preenchimento, com linha tracejada em 85% marcando o limiar de dificuldade.
 
 Eixo Y de 0% a 100%. Rotule o eixo — "taxa de ocupação" não é óbvio para quem chega direto pelo link.
 
@@ -83,36 +83,38 @@ Pílulas horizontais de Seg a Sáb. A selecionada usa fundo `asfalto` com texto 
 
 ### Legenda
 
-Sempre visível junto ao mapa, com as quatro cores e os quatro rótulos. Não é opcional: sem ela o mapa é indecifrável para quem chega pela primeira vez.
+Sempre visível junto ao mapa, com os quatro padrões e os quatro rótulos. Não é opcional: sem ela o mapa é indecifrável para quem chega pela primeira vez.
 
 ### Estado vazio
 
-Quando não há dado para o trecho, mostre `sem dado` com padrão tracejado e o texto "ainda não medimos esta rua". Nunca deixe o trecho em branco nem o pinte de verde por omissão.
+Quando não há dado para o trecho, mostre `sem dado` com padrão tracejado e o texto "ainda não medimos esta rua". Nunca deixe o trecho em branco nem o marque como livre por omissão.
 
 ---
 
-## Cores de status
+## Estados de ocupação
 
-| Estado | Ocupação | Token | Segundo sinal |
-|---|---|---|---|
-| Livre | até 60% | `--paro-livre` | preenchimento sólido + rótulo |
-| Apertado | 60% a 85% | `--paro-apertado` | hachura diagonal + rótulo |
-| Lotado | acima de 85% | `--paro-lotado` | hachura densa + rótulo |
-| Sem dado | — | `--paro-semdado` | tracejado + rótulo |
+A ocupação é comunicada por rótulo textual mais padrão de preenchimento, não por cor.
+
+| Estado | Ocupação | Padrão |
+|---|---|---|
+| Livre | até 60% | preenchimento sólido + rótulo |
+| Apertado | 60% a 85% | hachura diagonal + rótulo |
+| Lotado | acima de 85% | hachura densa + rótulo |
+| Sem dado | — | tracejado + rótulo |
 
 O corte em 85% vem do limiar em que, na literatura de mobilidade urbana, encontrar vaga passa a ser difícil na prática. É a mesma régua usada no protocolo de contagem em campo, então mapa e pesquisa falam a mesma língua.
 
-O segundo sinal não é opcional. Verde, âmbar e vermelho juntos são o pior caso para daltonismo.
+O rótulo textual não é opcional: padrão de preenchimento sozinho não basta, e o par rótulo + padrão protege quem tem daltonismo.
 
 ---
 
 ## Duas camadas
 
-**Camada de marca** — capa, slides, papelaria, cabeçalho, rodapé. Rigorosamente creme, céu, azul e asfalto. Nenhuma cor de status.
+**Camada de marca** — capa, slides, papelaria, cabeçalho, rodapé. Rigorosamente creme, céu, azul e asfalto.
 
-**Camada de produto** — mapa, cards, gráficos. Mesma base, com verde, âmbar e vermelho liberados apenas onde há dado real.
+**Camada de produto** — mapa, cards, gráficos. Mesma base, com os padrões de ocupação (sólido, hachura, tracejado) aplicados apenas onde há dado real.
 
-Essa separação é o que dá força à cor no produto: como as cores de status nunca aparecem no institucional, o usuário aprende que ali cor significa informação.
+Essa separação mantém a leitura limpa: o padrão de preenchimento só aparece onde carrega informação, nunca como decoração no institucional.
 
 ---
 

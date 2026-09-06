@@ -8,20 +8,20 @@ Aqui você encontra logotipo, símbolo, favicons, grafismos, fontes, tokens de d
 
 > Use sempre os arquivos originais deste repositório. Não redesenhe, recorte, recolore ou reconstrua a marca.
 
-**Assinatura:** *Menos volta, mais vaga.*
+**Assinatura:** _Menos volta, mais vaga._
 **Linha de apoio:** Mostramos a chance de vaga em cada rua, por horário.
 
 ---
 
 ## Por onde começar
 
-| O que você precisa fazer | Comece por |
-|---|---|
-| Baixar o logotipo | Seção [Logotipo](#logotipo) |
-| Criar uma interface | [Tokens de design](#tokens-de-design), [Tipografia](#tipografia) e o [DESIGN.md](DESIGN.md) |
-| Montar slides ou capa | [Grafismos](#grafismos) e [Cores](#cores) |
-| Orientar um agente de IA | Peça para ele ler o [AGENTS.md](AGENTS.md) antes de começar |
-| Entender o produto | Seção [O que o Parô promete](#o-que-o-parô-promete) |
+| O que você precisa fazer | Comece por                                                                                  |
+| ------------------------ | ------------------------------------------------------------------------------------------- |
+| Baixar o logotipo        | Seção [Logotipo](#logotipo)                                                                 |
+| Criar uma interface      | [Tokens de design](#tokens-de-design), [Tipografia](#tipografia) e o [DESIGN.md](DESIGN.md) |
+| Montar slides ou capa    | [Grafismos](#grafismos) e [Cores](#cores)                                                   |
+| Orientar um agente de IA | Peça para ele ler o [AGENTS.md](AGENTS.md) antes de começar                                 |
+| Entender o produto       | Seção [O que o Parô promete](#o-que-o-parô-promete)                                         |
 
 ---
 
@@ -29,7 +29,7 @@ Aqui você encontra logotipo, símbolo, favicons, grafismos, fontes, tokens de d
 
 O Parô entrega **previsão**, não garantia. A promessa é informação antes do deslocamento, calculada sobre observação de campo.
 
-Nenhum texto, tela ou peça pode prometer que o usuário vai encontrar vaga. Frases como *sua vaga te espera* ou *nunca mais procure vaga* soam melhor e são indefensáveis.
+Nenhum texto, tela ou peça pode prometer que o usuário vai encontrar vaga. Frases como _sua vaga te espera_ ou _nunca mais procure vaga_ soam melhor e são indefensáveis.
 
 Essa restrição orienta o design inteiro: exibir faixa em vez de número exato, mostrar sempre o horário da medição, e usar linguagem que admite incerteza.
 
@@ -39,12 +39,12 @@ Essa restrição orienta o design inteiro: exibir faixa em vez de número exato,
 
 O logotipo é a palavra `parô` em construção geométrica caixa baixa, com o `o` substituído por um volante e o circunflexo acima. A descendente do `p` forma uma cauda curva — é o único desvio da geometria e o que dá personalidade à marca.
 
-| Versão | Quando usar | Arquivos |
-|---|---|---|
-| [![Logo Parô fundo claro](logo/logo-paro-fundo-claro.svg)](logo/logo-paro-fundo-claro.svg) | Fundos creme, claros ou brancos | [svg](logo/logo-paro-fundo-claro.svg) · [png](logo/logo-paro-fundo-claro.png) |
-| [![Logo Parô fundo escuro](logo/logo-paro-fundo-escuro.svg)](logo/logo-paro-fundo-escuro.svg) | Fundos asfalto, azul ou fotografias | [svg](logo/logo-paro-fundo-escuro.svg) · [png](logo/logo-paro-fundo-escuro.png) |
-| [![Logo Parô monocromática preta](logo/logo-monocromatica-preta.svg)](logo/logo-monocromatica-preta.svg) | Uma cor sobre fundo claro | [svg](logo/logo-monocromatica-preta.svg) · [png](logo/logo-monocromatica-preta.png) |
-| [![Logo Parô monocromática branca](logo/logo-monocromatica-branca.svg)](logo/logo-monocromatica-branca.svg) | Uma cor sobre fundo escuro | [svg](logo/logo-monocromatica-branca.svg) · [png](logo/logo-monocromatica-branca.png) |
+| Versão                                                                                                      | Quando usar                         | Arquivos                                                                              |
+| ----------------------------------------------------------------------------------------------------------- | ----------------------------------- | ------------------------------------------------------------------------------------- |
+| [![Logo Parô fundo claro](logo/logo-paro-fundo-claro.svg)](logo/logo-paro-fundo-claro.svg)                  | Fundos creme, claros ou brancos     | [svg](logo/logo-paro-fundo-claro.svg) · [png](logo/logo-paro-fundo-claro.png)         |
+| [![Logo Parô fundo escuro](logo/logo-paro-fundo-escuro.svg)](logo/logo-paro-fundo-escuro.svg)               | Fundos asfalto, azul ou fotografias | [svg](logo/logo-paro-fundo-escuro.svg) · [png](logo/logo-paro-fundo-escuro.png)       |
+| [![Logo Parô monocromática preta](logo/logo-monocromatica-preta.svg)](logo/logo-monocromatica-preta.svg)    | Uma cor sobre fundo claro           | [svg](logo/logo-monocromatica-preta.svg) · [png](logo/logo-monocromatica-preta.png)   |
+| [![Logo Parô monocromática branca](logo/logo-monocromatica-branca.svg)](logo/logo-monocromatica-branca.svg) | Uma cor sobre fundo escuro          | [svg](logo/logo-monocromatica-branca.svg) · [png](logo/logo-monocromatica-branca.png) |
 
 Nas versões monocromáticas o volante perde definição, porque é o azul que o separa do resto da palavra. Reserve-as para carimbo e impressão em uma cor.
 
@@ -54,7 +54,7 @@ Nas versões monocromáticas o volante perde definição, porque é o azul que o
 - Mantenha área livre de **2x** ao redor, sendo x a altura do circunflexo.
 - Não altere cores, proporções, tipografia ou espaçamento.
 - Não rotacione, distorça, nem aplique sombra, contorno ou degradê.
-- O volante é sempre azul nas versões coloridas. Nunca aplique cor de status nele.
+- O volante é sempre azul nas versões coloridas. Nunca o recolora fora da paleta da marca.
 
 ### Símbolo
 
@@ -62,11 +62,11 @@ Nas versões monocromáticas o volante perde definição, porque é o azul que o
 
 O volante com o circunflexo é a versão reduzida da marca. Use em avatar, ícone de aplicativo, cabeçalho compacto e marca d'água.
 
-| Versão | Quando usar | Arquivos |
-|---|---|---|
-| Azul | Padrão, sobre creme ou asfalto | [svg](simbolo/volante.svg) · [png](simbolo/volante.png) |
-| Asfalto | Uma cor sobre fundo claro | [svg](simbolo/volante-asfalto.svg) · [png](simbolo/volante-asfalto.png) |
-| Creme | Uma cor sobre fundo escuro | [svg](simbolo/volante-creme.svg) · [png](simbolo/volante-creme.png) |
+| Versão  | Quando usar                    | Arquivos                                                                |
+| ------- | ------------------------------ | ----------------------------------------------------------------------- |
+| Azul    | Padrão, sobre creme ou asfalto | [svg](simbolo/volante.svg) · [png](simbolo/volante.png)                 |
+| Asfalto | Uma cor sobre fundo claro      | [svg](simbolo/volante-asfalto.svg) · [png](simbolo/volante-asfalto.png) |
+| Creme   | Uma cor sobre fundo escuro     | [svg](simbolo/volante-creme.svg) · [png](simbolo/volante-creme.png)     |
 
 O símbolo não substitui o logotipo completo em capas, slides de abertura ou no relatório.
 
@@ -78,20 +78,20 @@ O símbolo oficial encaixado em área quadrada de 64 px, com respiro proporciona
 
 ### Sites e ferramentas menores
 
-| Visual | Arquivo | Característica | Formatos |
-|---|---|---|---|
-| [![Favicon principal](favicon/favicon.svg)](favicon/favicon.svg) | `favicon` | Símbolo sem fundo | [svg](favicon/favicon.svg) · [png](favicon/favicon.png) |
-| [![Favicon alternativo](favicon/favicon-alt.svg)](favicon/favicon-alt.svg) | `favicon-alt` | Squircle azul | [svg](favicon/favicon-alt.svg) · [png](favicon/favicon-alt.png) |
+| Visual                                                                     | Arquivo       | Característica    | Formatos                                                        |
+| -------------------------------------------------------------------------- | ------------- | ----------------- | --------------------------------------------------------------- |
+| [![Favicon principal](favicon/favicon.svg)](favicon/favicon.svg)           | `favicon`     | Símbolo sem fundo | [svg](favicon/favicon.svg) · [png](favicon/favicon.png)         |
+| [![Favicon alternativo](favicon/favicon-alt.svg)](favicon/favicon-alt.svg) | `favicon-alt` | Squircle azul     | [svg](favicon/favicon-alt.svg) · [png](favicon/favicon-alt.png) |
 
 ### Aplicações com vários ambientes
 
 As diferenças de cor ajudam a identificar rapidamente se a aba aberta é de produção, homologação ou desenvolvimento local.
 
-| Ambiente | Visual | Arquivo | Formatos |
-|---|---|---|---|
-| Produção | [![Favicon produção](favicon/favicon-producao.svg)](favicon/favicon-producao.svg) | `favicon-producao` | [svg](favicon/favicon-producao.svg) · [png](favicon/favicon-producao.png) |
-| Homologação | [![Favicon homologação](favicon/favicon-homolog.svg)](favicon/favicon-homolog.svg) | `favicon-homolog` | [svg](favicon/favicon-homolog.svg) · [png](favicon/favicon-homolog.png) |
-| Localhost | [![Favicon localhost](favicon/favicon-localhost.svg)](favicon/favicon-localhost.svg) | `favicon-localhost` | [svg](favicon/favicon-localhost.svg) · [png](favicon/favicon-localhost.png) |
+| Ambiente    | Visual                                                                               | Arquivo             | Formatos                                                                    |
+| ----------- | ------------------------------------------------------------------------------------ | ------------------- | --------------------------------------------------------------------------- |
+| Produção    | [![Favicon produção](favicon/favicon-producao.svg)](favicon/favicon-producao.svg)    | `favicon-producao`  | [svg](favicon/favicon-producao.svg) · [png](favicon/favicon-producao.png)   |
+| Homologação | [![Favicon homologação](favicon/favicon-homolog.svg)](favicon/favicon-homolog.svg)   | `favicon-homolog`   | [svg](favicon/favicon-homolog.svg) · [png](favicon/favicon-homolog.png)     |
+| Localhost   | [![Favicon localhost](favicon/favicon-localhost.svg)](favicon/favicon-localhost.svg) | `favicon-localhost` | [svg](favicon/favicon-localhost.svg) · [png](favicon/favicon-localhost.png) |
 
 ---
 
@@ -101,13 +101,13 @@ Os grafismos da pasta [grafismos/](grafismos) são desenhados em traço fino, en
 
 Cada arquivo tem variante para fundo claro e escuro, em `svg` e `png`.
 
-| Grafismo | O que é | Onde usar | Exemplo |
-|---|---|---|---|
-| `detalhe-1-malha` | Grade de ruas levemente irregular, um trecho em azul | Fundo de seção, capa, textura ampla | [ver](docs/previews/preview-detalhe-1-malha.svg) |
-| `detalhe-2-isolinhas` | Curvas de nível de ocupação, núcleo em azul | Capa, abertura de seção, densidade | [ver](docs/previews/preview-detalhe-2-isolinhas.svg) |
-| `detalhe-3-acento` | Circunflexo da marca vazado, em repetição esparsa | Textura de fundo, papelaria | [ver](docs/previews/preview-detalhe-3-acento.svg) |
-| `detalhe-4-radar` | Anéis concêntricos com marcas radiais e ponteiro | Carregamento, ícone de seção | [ver](docs/previews/preview-detalhe-4-radar.svg) |
-| `detalhe-5-baias` | Baias de estacionamento em contorno, uma em azul | Rodapé, divisor, cabeçalho | [ver](docs/previews/preview-detalhe-5-baias.svg) |
+| Grafismo              | O que é                                              | Onde usar                           | Exemplo                                              |
+| --------------------- | ---------------------------------------------------- | ----------------------------------- | ---------------------------------------------------- |
+| `detalhe-1-malha`     | Grade de ruas levemente irregular, um trecho em azul | Fundo de seção, capa, textura ampla | [ver](docs/previews/preview-detalhe-1-malha.svg)     |
+| `detalhe-2-isolinhas` | Curvas de nível de ocupação, núcleo em azul          | Capa, abertura de seção, densidade  | [ver](docs/previews/preview-detalhe-2-isolinhas.svg) |
+| `detalhe-3-acento`    | Circunflexo da marca vazado, em repetição esparsa    | Textura de fundo, papelaria         | [ver](docs/previews/preview-detalhe-3-acento.svg)    |
+| `detalhe-4-radar`     | Anéis concêntricos com marcas radiais e ponteiro     | Carregamento, ícone de seção        | [ver](docs/previews/preview-detalhe-4-radar.svg)     |
+| `detalhe-5-baias`     | Baias de estacionamento em contorno, uma em azul     | Rodapé, divisor, cabeçalho          | [ver](docs/previews/preview-detalhe-5-baias.svg)     |
 
 ### Regras de aplicação
 
@@ -123,39 +123,39 @@ Cada arquivo tem variante para fundo claro e escuro, em `svg` e `png`.
 
 A paleta vem da capa oficial do projeto.
 
-![Paleta Parô](docs/paleta.png)
-
 ### Marca
 
-| Cor | HEX | RGB | Uso |
-|---|---|---|---|
+| Cor        | HEX       | RGB             | Uso                                  |
+| ---------- | --------- | --------------- | ------------------------------------ |
 | Creme Parô | `#FFF9E3` | `255, 249, 227` | Logotipo sobre foto, fundo de página |
-| Céu Parô | `#C3D2D7` | `195, 210, 215` | Fundos amplos, áreas de respiro |
-| Céu claro | `#D2DEDA` | `210, 222, 218` | Superfícies secundárias, cards |
-| Céu escuro | `#BAC7CD` | `186, 199, 205` | Bordas suaves, separadores |
-| Azul Parô | `#6EA8FF` | `110, 168, 255` | Volante, destaques, direção do olhar |
-| Azul texto | `#3D74D6` | `61, 116, 214` | Quando o azul precisa carregar texto |
-| Concreto | `#75746E` | `117, 116, 110` | Texto secundário, legendas |
-| Asfalto | `#32312C` | `50, 49, 44` | Textos, estrutura, fundos escuros |
+| Céu Parô   | `#C3D2D7` | `195, 210, 215` | Fundos amplos, áreas de respiro      |
+| Céu claro  | `#D2DEDA` | `210, 222, 218` | Superfícies secundárias, cards       |
+| Céu escuro | `#BAC7CD` | `186, 199, 205` | Bordas suaves, separadores           |
+| Azul Parô  | `#6EA8FF` | `110, 168, 255` | Volante, destaques, direção do olhar |
+| Azul texto | `#3D74D6` | `61, 116, 214`  | Quando o azul precisa carregar texto |
+| Concreto   | `#75746E` | `117, 116, 110` | Texto secundário, legendas           |
+| Asfalto    | `#32312C` | `50, 49, 44`    | Textos, estrutura, fundos escuros    |
 
 O creme e o asfalto são quentes de propósito: `#FFF9E3` puxa para o amarelo e `#32312C` tem base marrom, não cinza neutro. É o que dá o ar analógico da capa. Não substitua por branco puro nem por preto puro.
 
-### Status de ocupação
+### Estados de ocupação
 
-| Estado | Ocupação | HEX | Significado |
-|---|---|---|---|
-| Livre | até 60% | `#00A86B` | Boa chance de vaga |
-| Apertado | 60% a 85% | `#F0A020` | Vai precisar procurar |
-| Lotado | acima de 85% | `#E03B3B` | Considere alternativa |
-| Sem dado | — | `#B4B2A8` | Trecho não medido |
+A ocupação de vaga é comunicada por rótulo textual mais padrão de preenchimento, **não por cor**. Só aparece onde há dado real.
+
+| Estado   | Ocupação     | Padrão                        | Significado           |
+| -------- | ------------ | ----------------------------- | --------------------- |
+| Livre    | até 60%      | preenchimento sólido + rótulo | Boa chance de vaga    |
+| Apertado | 60% a 85%    | hachura diagonal + rótulo     | Vai precisar procurar |
+| Lotado   | acima de 85% | hachura densa + rótulo        | Considere alternativa |
+| Sem dado | —            | tracejado + rótulo            | Trecho não medido     |
 
 O corte em 85% não é arbitrário: é o limiar em que, na literatura de mobilidade urbana, encontrar vaga passa a ser difícil na prática. É a mesma régua do protocolo de contagem em campo, então mapa e pesquisa falam a mesma língua.
 
 ### Duas regras que não podem ser quebradas
 
-**A marca nunca é verde, âmbar ou vermelho.** Essas cores pertencem ao status da vaga. Se a marca competisse com elas, o usuário não saberia se o verde na tela significa "tem vaga" ou "é a cor do app".
+**A ocupação nunca é representada por cor.** Cada estado se distingue por rótulo e padrão de preenchimento. Assim a cor não compete com a informação, e não há dúvida sobre o que um tom na tela significa.
 
-**Status nunca é comunicado só por cor.** Verde, âmbar e vermelho juntos são o pior caso para daltonismo, que afeta cerca de 8% dos homens. Cada estado precisa de um segundo sinal: preenchimento sólido, hachura diagonal, hachura densa ou tracejado, sempre com rótulo textual.
+**Cada estado precisa de rótulo textual.** Padrão de preenchimento sozinho não basta: sólido, hachura diagonal, hachura densa e tracejado sempre acompanham o rótulo escrito. Isso também protege quem tem daltonismo, que afeta cerca de 8% dos homens.
 
 Em produtos digitais, valide o contraste pela WCAG. O `Azul Parô` funciona no logotipo, no símbolo e em áreas grandes, mas não alcança contraste suficiente para texto pequeno sobre creme — use `Azul texto` nesses casos.
 
@@ -163,34 +163,34 @@ Em produtos digitais, valide o contraste pela WCAG. O `Azul Parô` funciona no l
 
 ## Tipografia
 
-| Família | Uso |
-|---|---|
-| **Satoshi** | Família única da marca: títulos, chamadas, parágrafos, interface, tabelas e formulários. Grotesca de construção geométrica, em diálogo direto com o desenho do logotipo. |
-| **JetBrains Mono** | Código, comandos, logs e dados monoespaçados. |
+| Família            | Uso                                                                                                                                                                      |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Satoshi**        | Família única da marca: títulos, chamadas, parágrafos, interface, tabelas e formulários. Grotesca de construção geométrica, em diálogo direto com o desenho do logotipo. |
+| **JetBrains Mono** | Código, comandos, logs e dados monoespaçados.                                                                                                                            |
 
 Não use JetBrains Mono em títulos ou texto corrido.
 
 ### Pesos
 
-| Peso | Quando usar |
-|---|---|
-| Light 300 | Subtítulos grandes, em fundo limpo. Evite abaixo de 18 px. |
-| Regular 400 | Corpo, legendas, rótulos |
-| Medium 500 | Nome de rua, ênfase leve, itens de menu |
-| Bold 700 | Títulos, botões, etiquetas em caixa alta |
-| Black 900 | Apenas percentuais grandes e números de destaque |
+| Peso        | Quando usar                                                |
+| ----------- | ---------------------------------------------------------- |
+| Light 300   | Subtítulos grandes, em fundo limpo. Evite abaixo de 18 px. |
+| Regular 400 | Corpo, legendas, rótulos                                   |
+| Medium 500  | Nome de rua, ênfase leve, itens de menu                    |
+| Bold 700    | Títulos, botões, etiquetas em caixa alta                   |
+| Black 900   | Apenas percentuais grandes e números de destaque           |
 
 ### Escala
 
-| Uso | Tamanho | Peso | Altura de linha |
-|---|---|---|---|
-| Título de página | 36 px | 700 Bold | 1.2 |
-| Título de seção | 24 px | 700 Bold | 1.2 |
-| Nome da rua | 18 px | 500 Medium | 1.4 |
-| Corpo | 16 px | 400 Regular | 1.5 |
-| Legenda, rótulo | 14 px | 400 Regular | 1.5 |
-| Etiqueta caixa alta | 12 px | 700 Bold, tracking 0.18em | 1.4 |
-| Percentual grande | 48 px | 900 Black | 1.0 |
+| Uso                 | Tamanho | Peso                      | Altura de linha |
+| ------------------- | ------- | ------------------------- | --------------- |
+| Título de página    | 36 px   | 700 Bold                  | 1.2             |
+| Título de seção     | 24 px   | 700 Bold                  | 1.2             |
+| Nome da rua         | 18 px   | 500 Medium                | 1.4             |
+| Corpo               | 16 px   | 400 Regular               | 1.5             |
+| Legenda, rótulo     | 14 px   | 400 Regular               | 1.5             |
+| Etiqueta caixa alta | 12 px   | 700 Bold, tracking 0.18em | 1.4             |
+| Percentual grande   | 48 px   | 900 Black                 | 1.0             |
 
 Nunca centralize texto corrido. Máximo de 70 caracteres por linha em parágrafos.
 
@@ -215,14 +215,17 @@ Reserve para etiquetas, rótulos de canto e chamadas curtas. Nunca em texto corr
 **Opção 1 — CDN da Fontshare.** Mais simples, requer internet:
 
 ```html
-<link rel="preconnect" href="https://api.fontshare.com">
-<link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://api.fontshare.com" />
+<link
+  href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700,900&display=swap"
+  rel="stylesheet"
+/>
 ```
 
 **Opção 2 — arquivos locais.** Recomendado para o protótipo, funciona offline:
 
 ```html
-<link rel="stylesheet" href="fontes/fontes.css">
+<link rel="stylesheet" href="fontes/fontes.css" />
 ```
 
 Os arquivos de fonte **não estão versionados** aqui, por serem binários pesados e de licenciamento de terceiros. Baixe em [fontshare.com/fonts/satoshi](https://www.fontshare.com/fonts/satoshi) e coloque os `.woff2` na pasta [fontes/](fontes) — o `fontes.css` já os referencia. Instruções completas em [fontes/LEIAME.md](fontes/LEIAME.md).
@@ -237,11 +240,11 @@ Evite pesos leves em tamanhos pequenos, fundos complexos ou baixa resolução.
 
 A pasta [tokens/](tokens) reúne cores, fontes, espaçamentos, raios e limiares usados em interfaces.
 
-| Arquivo | Uso |
-|---|---|
-| [paro.css](tokens/paro.css) | Variáveis CSS prontas para projetos web |
-| [paro.json](tokens/paro.json) | Tokens no formato W3C Design Tokens |
-| [paro.tailwind.css](tokens/paro.tailwind.css) | Bloco `@theme` para Tailwind CSS v4 |
+| Arquivo                                       | Uso                                     |
+| --------------------------------------------- | --------------------------------------- |
+| [paro.css](tokens/paro.css)                   | Variáveis CSS prontas para projetos web |
+| [paro.json](tokens/paro.json)                 | Tokens no formato W3C Design Tokens     |
+| [paro.tailwind.css](tokens/paro.tailwind.css) | Bloco `@theme` para Tailwind CSS v4     |
 
 Exemplo com CSS:
 
@@ -263,23 +266,23 @@ Para orientações completas sobre componentes, contraste e hierarquia visual, c
 
 ## Componentes do produto
 
-**Card de rua** — nome da rua, faixa de status com cor e hachura, percentual em número grande, e **horário da última medição**. O horário é obrigatório: sem ele o usuário assume tempo real, e o Parô entrega previsão.
+**Card de rua** — nome da rua, faixa de status com padrão de preenchimento e rótulo, percentual em número grande, e **horário da última medição**. O horário é obrigatório: sem ele o usuário assume tempo real, e o Parô entrega previsão.
 
-**Gráfico de ocupação por horário** — barras verticais por faixa de 30 minutos, coloridas por status, com linha tracejada em 85% marcando o limiar de dificuldade.
+**Gráfico de ocupação por horário** — barras verticais por faixa de 30 minutos, diferenciadas por padrão de preenchimento, com linha tracejada em 85% marcando o limiar de dificuldade.
 
-**Legenda** — sempre visível junto ao mapa, com as quatro cores e os quatro rótulos. Não é opcional.
+**Legenda** — sempre visível junto ao mapa, com os quatro padrões e os quatro rótulos. Não é opcional.
 
-**Estado vazio** — quando não há dado, mostre `sem dado` com padrão tracejado e o texto "ainda não medimos esta rua". Nunca deixe em branco nem pinte de verde por omissão.
+**Estado vazio** — quando não há dado, mostre `sem dado` com padrão tracejado e o texto "ainda não medimos esta rua". Nunca deixe em branco nem marque como livre por omissão.
 
 ---
 
 ## Duas camadas
 
-**Camada de marca** — capa, slides, papelaria, cabeçalho, rodapé. Rigorosamente creme, céu, azul e asfalto. Nenhuma cor de status.
+**Camada de marca** — capa, slides, papelaria, cabeçalho, rodapé. Rigorosamente creme, céu, azul e asfalto.
 
-**Camada de produto** — mapa, cards, gráficos. Mesma base, com verde, âmbar e vermelho liberados apenas onde há dado real.
+**Camada de produto** — mapa, cards, gráficos. Mesma base, com os padrões de ocupação (sólido, hachura, tracejado) aplicados apenas onde há dado real.
 
-Essa separação é o que dá força à cor no produto: como as cores de status nunca aparecem no institucional, o usuário aprende que ali cor significa informação, não decoração.
+Essa separação mantém a leitura limpa: o padrão de preenchimento só aparece onde carrega informação, nunca como decoração no institucional.
 
 ---
 
@@ -290,16 +293,16 @@ Direto e prestativo, sem infantilizar. O usuário está com pressa.
 - Diga: "70% de chance de vaga às 19h"
 - Não diga: "Poxa, parece que tá difícil por aqui!"
 
-Sempre exponha a incerteza. *Provavelmente cheio* é honesto. *Cheio* é uma afirmação que os dados de campo não sustentam.
+Sempre exponha a incerteza. _Provavelmente cheio_ é honesto. _Cheio_ é uma afirmação que os dados de campo não sustentam.
 
 ### Frases aprovadas
 
-| Frase | Onde usar |
-|---|---|
-| *Menos volta, mais vaga.* | Assinatura de capa, dividida entre os cantos |
-| *Chegue sabendo.* | Assinatura curta ao lado do logotipo |
-| *Todo mundo já rodou o quarteirão. Ninguém precisava.* | Frase de capa, rodapé |
-| *A gente não cria vagas. A gente mostra onde elas estão.* | Abertura do manual, primeira página interna |
+| Frase                                                     | Onde usar                                    |
+| --------------------------------------------------------- | -------------------------------------------- |
+| _Menos volta, mais vaga._                                 | Assinatura de capa, dividida entre os cantos |
+| _Chegue sabendo._                                         | Assinatura curta ao lado do logotipo         |
+| _Todo mundo já rodou o quarteirão. Ninguém precisava._    | Frase de capa, rodapé                        |
+| _A gente não cria vagas. A gente mostra onde elas estão._ | Abertura do manual, primeira página interna  |
 
 Não use emojis. Para ícones, use a família [Lucide](https://lucide.dev/).
 
@@ -334,7 +337,7 @@ As mesmas regras valem para pessoas e agentes:
 - Não use emojis. Use ícones da família [Lucide](https://lucide.dev/).
 - Para logos de terceiros, procure no [Iconify](https://icon-sets.iconify.design/) ou no [Icônes](https://icones.js.org/).
 - Não redesenhe ativos existentes.
-- Use o azul como destaque, nunca as cores de status.
+- Use o azul como destaque. Não introduza cores fora da paleta da marca.
 - Valide o contraste em materiais digitais.
 - Nenhum texto promete encontrar vaga.
 
