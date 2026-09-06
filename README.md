@@ -1,4 +1,4 @@
-![Parô](logo/logo-paro-fundo-claro.svg)
+![Parô](logo/logo-paro-fundo-escuro.svg)
 
 # Marca Parô
 
