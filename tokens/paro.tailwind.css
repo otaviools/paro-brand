@@ -14,6 +14,9 @@
   --color-concreto:   oklch(0.545 0.008 92);
   --color-asfalto:    oklch(0.283 0.005 92);
 
+  /* Degradê de azul: do destaque ao azul de texto */
+  --gradient-azul: linear-gradient(135deg, oklch(0.730 0.128 259) 0%, oklch(0.585 0.146 262) 100%);
+
   /* Status de ocupação */
   --color-livre:    oklch(0.630 0.145 162);
   --color-apertado: oklch(0.750 0.145 70);
@@ -33,3 +36,9 @@
 
 /* Gera automaticamente: bg-azul, text-asfalto, border-livre,
    tracking-etiqueta, rounded-md e todas as demais utilitárias. */
+
+/* Degradê não é cor, então não vira utilitária sozinho.
+   Use bg-degrade-azul para aplicar o degradê como fundo. */
+@utility bg-degrade-azul {
+  background-image: var(--gradient-azul);
+}

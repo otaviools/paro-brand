@@ -43,6 +43,16 @@
         "$description": "Textos, estrutura, fundos escuros"
       }
     },
+    "degrade": {
+      "azul": {
+        "$type": "gradient",
+        "$value": [
+          { "color": "#6EA8FF", "position": 0 },
+          { "color": "#3D74D6", "position": 1 }
+        ],
+        "$description": "Degradê de azul (135°), do destaque ao azul de texto. Fundos e realces. Nunca sobre logotipo, símbolo ou grafismos"
+      }
+    },
     "status": {
       "livre": {
         "$type": "color",

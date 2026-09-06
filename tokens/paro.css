@@ -13,6 +13,11 @@
   --paro-concreto:       #75746E;
   --paro-asfalto:        #32312C;
 
+  /* --- Degradê de azul ---
+     Do azul de destaque ao azul de texto. Para fundos e realces.
+     Nunca sobre o logotipo, símbolo ou grafismos. */
+  --paro-degrade-azul:   linear-gradient(135deg, #6EA8FF 0%, #3D74D6 100%);
+
   /* --- Cores de status de ocupação ---
      Só podem ser usadas para representar dado real de vaga.
      Nunca como enfeite. */
