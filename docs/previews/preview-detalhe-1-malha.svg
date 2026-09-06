@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" width="600" height="340" role="img" aria-label="Exemplo de aplicação: detalhe-1-malha">
+<title>Aplicação do detalhe-1-malha</title>
+<rect width="600" height="340" fill="#32312C"/>
+<g transform="translate(100,60) scale(1.0)" opacity="0.16">
+<g stroke="#FFF9E3" stroke-width="1.6" fill="none" opacity="0.85"><path d="M42 20 L41 185"/><path d="M96 20 L92 185"/><path d="M158 20 L158 185"/><path d="M205 20 L209 185"/><path d="M268 20 L262 185"/><path d="M318 20 L313 185"/><path d="M362 20 L364 185"/><path d="M15 38 L385 35"/><path d="M15 82 L385 83"/><path d="M15 128 L385 124"/><path d="M15 168 L385 172"/></g><path d="M158 82 L205 82" stroke="#6EA8FF" stroke-width="4" stroke-linecap="round"/>
+</g>
+<text x="60" y="150" font-family="Satoshi, sans-serif" font-size="42" font-weight="700" fill="#FFF9E3">parô</text>
+<text x="60" y="184" font-family="Satoshi, sans-serif" font-size="13" font-weight="700" fill="#6EA8FF" letter-spacing="2.4">MENOS VOLTA, MAIS VAGA.</text>
+</svg>

@@ -1,0 +1,10 @@
+.DS_Store
+Thumbs.db
+node_modules/
+*.log
+
+# Arquivos de fonte não são versionados (ver fontes/LEIAME.md)
+fontes/*.woff2
+fontes/*.woff
+fontes/*.ttf
+fontes/*.otf

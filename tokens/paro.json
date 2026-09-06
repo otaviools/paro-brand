@@ -1,0 +1,171 @@
+{
+  "$schema": "https://tr.designtokens.org/format/",
+  "paro": {
+    "cor": {
+      "creme": {
+        "$type": "color",
+        "$value": "#FFF9E3",
+        "$description": "Fundo de página, logotipo sobre foto"
+      },
+      "ceu": {
+        "$type": "color",
+        "$value": "#C3D2D7",
+        "$description": "Fundos amplos, áreas de respiro"
+      },
+      "ceu-claro": {
+        "$type": "color",
+        "$value": "#D2DEDA",
+        "$description": "Superfícies secundárias, cards"
+      },
+      "ceu-escuro": {
+        "$type": "color",
+        "$value": "#BAC7CD",
+        "$description": "Bordas suaves, separadores"
+      },
+      "azul": {
+        "$type": "color",
+        "$value": "#6EA8FF",
+        "$description": "Volante, destaques"
+      },
+      "azul-texto": {
+        "$type": "color",
+        "$value": "#3D74D6",
+        "$description": "Quando o azul carrega texto"
+      },
+      "concreto": {
+        "$type": "color",
+        "$value": "#75746E",
+        "$description": "Texto secundário, legendas"
+      },
+      "asfalto": {
+        "$type": "color",
+        "$value": "#32312C",
+        "$description": "Textos, estrutura, fundos escuros"
+      }
+    },
+    "status": {
+      "livre": {
+        "$type": "color",
+        "$value": "#00A86B",
+        "$description": "Ocupação até 60%"
+      },
+      "apertado": {
+        "$type": "color",
+        "$value": "#F0A020",
+        "$description": "Ocupação de 60% a 85%"
+      },
+      "lotado": {
+        "$type": "color",
+        "$value": "#E03B3B",
+        "$description": "Ocupação acima de 85%"
+      },
+      "semdado": {
+        "$type": "color",
+        "$value": "#B4B2A8",
+        "$description": "Trecho não medido"
+      }
+    },
+    "limiar": {
+      "livre": {
+        "$type": "number",
+        "$value": 0.6
+      },
+      "apertado": {
+        "$type": "number",
+        "$value": 0.85
+      }
+    },
+    "fonte": {
+      "principal": {
+        "$type": "fontFamily",
+        "$value": [
+          "Satoshi",
+          "system-ui",
+          "sans-serif"
+        ]
+      },
+      "mono": {
+        "$type": "fontFamily",
+        "$value": [
+          "JetBrains Mono",
+          "ui-monospace",
+          "monospace"
+        ]
+      }
+    },
+    "peso": {
+      "light": {
+        "$type": "fontWeight",
+        "$value": 300
+      },
+      "regular": {
+        "$type": "fontWeight",
+        "$value": 400
+      },
+      "medium": {
+        "$type": "fontWeight",
+        "$value": 500
+      },
+      "bold": {
+        "$type": "fontWeight",
+        "$value": 700
+      },
+      "black": {
+        "$type": "fontWeight",
+        "$value": 900
+      }
+    },
+    "espaco": {
+      "1": {
+        "$type": "dimension",
+        "$value": "4px"
+      },
+      "2": {
+        "$type": "dimension",
+        "$value": "8px"
+      },
+      "3": {
+        "$type": "dimension",
+        "$value": "12px"
+      },
+      "4": {
+        "$type": "dimension",
+        "$value": "16px"
+      },
+      "6": {
+        "$type": "dimension",
+        "$value": "24px"
+      },
+      "8": {
+        "$type": "dimension",
+        "$value": "32px"
+      },
+      "12": {
+        "$type": "dimension",
+        "$value": "48px"
+      },
+      "16": {
+        "$type": "dimension",
+        "$value": "64px"
+      }
+    },
+    "raio": {
+      "sm": {
+        "$type": "dimension",
+        "$value": "8px"
+      },
+      "md": {
+        "$type": "dimension",
+        "$value": "12px"
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": "16px"
+      },
+      "full": {
+        "$type": "dimension",
+        "$value": "9999px"
+      }
+    }
+  }
+}

@@ -1,0 +1,3 @@
+*.svg linguist-detectable=false
+*.png binary
+*.woff2 binary
