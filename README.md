@@ -85,13 +85,12 @@ O símbolo oficial encaixado em área quadrada de 64 px, com respiro proporciona
 
 ### Aplicações com vários ambientes
 
-As diferenças de cor ajudam a identificar rapidamente se a aba aberta é de produção, homologação ou desenvolvimento local.
+As diferenças de cor ajudam a identificar rapidamente se a aba aberta é de produção ou de desenvolvimento local.
 
-| Ambiente    | Visual                                                                               | Arquivo             | Formatos                                                                    |
-| ----------- | ------------------------------------------------------------------------------------ | ------------------- | --------------------------------------------------------------------------- |
-| Produção    | [![Favicon produção](favicon/favicon-producao.svg)](favicon/favicon-producao.svg)    | `favicon-producao`  | [svg](favicon/favicon-producao.svg) · [png](favicon/favicon-producao.png)   |
-| Homologação | [![Favicon homologação](favicon/favicon-homolog.svg)](favicon/favicon-homolog.svg)   | `favicon-homolog`   | [svg](favicon/favicon-homolog.svg) · [png](favicon/favicon-homolog.png)     |
-| Localhost   | [![Favicon localhost](favicon/favicon-localhost.svg)](favicon/favicon-localhost.svg) | `favicon-localhost` | [svg](favicon/favicon-localhost.svg) · [png](favicon/favicon-localhost.png) |
+| Ambiente  | Visual                                                                               | Arquivo             | Formatos                                                                    |
+| --------- | ------------------------------------------------------------------------------------ | ------------------- | --------------------------------------------------------------------------- |
+| Produção  | [![Favicon produção](favicon/favicon-producao.svg)](favicon/favicon-producao.svg)    | `favicon-producao`  | [svg](favicon/favicon-producao.svg) · [png](favicon/favicon-producao.png)   |
+| Localhost | [![Favicon localhost](favicon/favicon-localhost.svg)](favicon/favicon-localhost.svg) | `favicon-localhost` | [svg](favicon/favicon-localhost.svg) · [png](favicon/favicon-localhost.png) |
 
 ---
 
