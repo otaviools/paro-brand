@@ -101,13 +101,38 @@ Os grafismos da pasta [grafismos/](grafismos) são desenhados em traço fino, en
 
 Cada arquivo tem variante para fundo claro e escuro, em `svg` e `png`.
 
-| Grafismo              | O que é                                              | Onde usar                           | Exemplo                                              |
-| --------------------- | ---------------------------------------------------- | ----------------------------------- | ---------------------------------------------------- |
-| `detalhe-1-malha`     | Grade de ruas levemente irregular, um trecho em azul | Fundo de seção, capa, textura ampla | [ver](docs/previews/preview-detalhe-1-malha.svg)     |
-| `detalhe-2-isolinhas` | Curvas de nível de ocupação, núcleo em azul          | Capa, abertura de seção, densidade  | [ver](docs/previews/preview-detalhe-2-isolinhas.svg) |
-| `detalhe-3-acento`    | Circunflexo da marca vazado, em repetição esparsa    | Textura de fundo, papelaria         | [ver](docs/previews/preview-detalhe-3-acento.svg)    |
-| `detalhe-4-radar`     | Anéis concêntricos com marcas radiais e ponteiro     | Carregamento, ícone de seção        | [ver](docs/previews/preview-detalhe-4-radar.svg)     |
-| `detalhe-5-baias`     | Baias de estacionamento em contorno, uma em azul     | Rodapé, divisor, cabeçalho          | [ver](docs/previews/preview-detalhe-5-baias.svg)     |
+<table>
+  <tr>
+    <td width="33%" valign="top">
+      <a href="docs/previews/preview-detalhe-1-malha.png"><img src="docs/previews/preview-detalhe-1-malha.png" alt="Preview detalhe-1"></a>
+      <p><code>detalhe-1-malha</code></p>
+      <p>Grade de ruas levemente irregular, um trecho em azul. Use em fundo de seção, capa e textura ampla.</p>
+    </td>
+    <td width="33%" valign="top">
+      <a href="docs/previews/preview-detalhe-2-isolinhas.png"><img src="docs/previews/preview-detalhe-2-isolinhas.png" alt="Preview detalhe-2"></a>
+      <p><code>detalhe-2-isolinhas</code></p>
+      <p>Curvas de nível de ocupação, núcleo em azul. Use em capa, abertura de seção e para dar densidade.</p>
+    </td>
+    <td width="33%" valign="top">
+      <a href="docs/previews/preview-detalhe-3-acento.png"><img src="docs/previews/preview-detalhe-3-acento.png" alt="Preview detalhe-3"></a>
+      <p><code>detalhe-3-acento</code></p>
+      <p>Circunflexo da marca vazado, em repetição esparsa. Use como textura de fundo e em papelaria.</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="33%" valign="top">
+      <a href="docs/previews/preview-detalhe-4-radar.png"><img src="docs/previews/preview-detalhe-4-radar.png" alt="Preview detalhe-4"></a>
+      <p><code>detalhe-4-radar</code></p>
+      <p>Anéis concêntricos com marcas radiais e ponteiro. Use em carregamento e ícone de seção.</p>
+    </td>
+    <td width="33%" valign="top">
+      <a href="docs/previews/preview-detalhe-5-baias.png"><img src="docs/previews/preview-detalhe-5-baias.png" alt="Preview detalhe-5"></a>
+      <p><code>detalhe-5-baias</code></p>
+      <p>Baias de estacionamento em contorno, uma em azul. Use em rodapé, divisor e cabeçalho.</p>
+    </td>
+    <td width="33%" valign="top"></td>
+  </tr>
+</table>
 
 ### Regras de aplicação
 
