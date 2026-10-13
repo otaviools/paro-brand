@@ -21,7 +21,7 @@ Importe `tokens/paro.css` e use as variáveis. Não escreva valores hexadecimais
 
 .card-rua {
   background: var(--paro-superficie);
-  border-radius: var(--paro-raio-md);
+  border-radius: var(--paro-raio-card);
   font-family: var(--paro-fonte);
   border: var(--paro-borda);
   padding: var(--paro-esp-4);
@@ -34,15 +34,25 @@ Para Tailwind v4, use `tokens/paro.tailwind.css`. Para outras ferramentas, `toke
 
 ## Escala tipográfica
 
-| Uso | Tamanho | Peso Satoshi | Altura de linha |
+Valores das telas do Figma (Produto Mobile e Produto Desktop). Cada linha tem um token `--paro-texto-*` no `paro.css`.
+
+| Uso | Tamanho | Peso Manrope | Token |
 |---|---|---|---|
-| Título de página | 36 px | 700 Bold | 1.2 |
-| Título de seção | 24 px | 700 Bold | 1.2 |
-| Nome da rua | 18 px | 500 Medium | 1.4 |
-| Corpo | 16 px | 400 Regular | 1.5 |
-| Legenda, rótulo | 14 px | 400 Regular | 1.5 |
-| Etiqueta caixa alta | 12 px | 700 Bold, tracking 0.18em | 1.4 |
-| Percentual grande | 48 px | 900 Black | 1.0 |
+| Percentual de destaque (desktop) | 56 px | 800 ExtraBold | `--paro-texto-hero` |
+| Percentual grande (mobile) | 48 px | 800 ExtraBold | `--paro-texto-percentual` |
+| Indicador de painel | 40 px | 800 ExtraBold | `--paro-texto-kpi` |
+| Número de card | 28 px | 800 ExtraBold | `--paro-texto-numero` |
+| Título de página | 26 px | 700 Bold | `--paro-texto-titulo` |
+| Número de stat, título de detalhe | 22 px | 800 ExtraBold ou 700 Bold | `--paro-texto-stat` |
+| Botão principal (mobile) | 18 px | 700 Bold | `--paro-texto-botao` |
+| Título de card, percentual de lista | 17 px | 700 Bold ou 800 ExtraBold | `--paro-texto-card` |
+| Botão secundário, seletor de local | 16 px | 700 Bold ou 600 SemiBold | `--paro-texto-destaque` |
+| Corpo, nome da rua na lista | 15 px | 500 Medium ou 700 Bold | `--paro-texto-corpo` |
+| Menu, abas, campos | 14 px | 500 Medium | `--paro-texto-interface` |
+| Subtítulo, legenda, badge | 13 px | 500 Medium ou 700 Bold | `--paro-texto-legenda` |
+| Nota de rodapé, eixo de gráfico | 12 px | 400 Regular ou 500 Medium | `--paro-texto-nota` |
+| Etiqueta caixa alta | 11 px | 700 Bold, tracking 0.145em | `--paro-texto-etiqueta` |
+| Nome de rua no mapa | 10 px | 600 SemiBold | `--paro-texto-mapa` |
 
 Nunca centralize texto corrido. Máximo de 70 caracteres por linha em parágrafos.
 
@@ -50,9 +60,44 @@ Nunca centralize texto corrido. Máximo de 70 caracteres por linha em parágrafo
 
 ## Espaçamento
 
-Escala de 4 px: 4, 8, 12, 16, 24, 32, 48, 64. Nada fora dela.
+Escala de 4 px: 4, 8, 12, 16, 20, 24, 32, 48, 64. Nada fora dela.
 
-Raio de borda: 8 px em botões e campos, 12 px em cards, 16 px no container do mapa. Full apenas em pílulas e badges.
+Margem lateral de 24 px no mobile (frame de 393 px) e 32 px no desktop (frame de 1440 px). No desktop, barra lateral de 248 px e barra superior de 88 px; no mobile, barra de abas de 96 px.
+
+| Raio | Onde | Token |
+|---|---|---|
+| 8 px | Badges, abas internas, padrões de ocupação | `--paro-raio-badge` |
+| 10 px | Botões, campos, selects, itens de menu | `--paro-raio-botao` |
+| 12 px | Alertas, stats, textareas | `--paro-raio-alerta` |
+| 14 px | Card de lista de ruas | `--paro-raio-lista` |
+| 16 px | Cards, hero e container do mapa | `--paro-raio-card` |
+| full | Pílulas, switches e badge de status | `--paro-raio-full` |
+
+Alturas de controle: botão principal de 56 px no mobile e 44 px no desktop, botão de ícone de 40 px, campo de 52 px no mobile e 40 px no desktop, abas de 40 px e badge de 28 px.
+
+### Cores de produto
+
+Além das cores de marca, as telas usam tons quentes derivados do creme e do asfalto. Ficam só na interface, nunca no logotipo, símbolo ou grafismos.
+
+| Token | Claro | Escuro | Uso |
+|---|---|---|---|
+| `--paro-fundo` | `#FFF9E3` | `#32312C` | Fundo da página |
+| `--paro-superficie` | `#FFFCF2` | `#3E3D37` | Cards, barra lateral, campos |
+| `--paro-superficie-suave` | `#F3ECD4` | `#47463F` | Botão soft, stats, fundo de abas |
+| `--paro-superficie-ativa` | `#D2DEDA` | `#4A5558` | Item ativo, badge soft, alerta |
+| `--paro-texto-fraco` | `#75746E` | `#A8A69C` | Texto secundário |
+| `--paro-texto-terciario` | `#8F8A7E` | `#9C998E` | Nomes de rua no mapa |
+| `--paro-acao` | `#3D74D6` | `#6EA8FF` | Botão principal e links |
+| `--paro-grafico-barra` | `#8CB0EE` | `#4F79BF` | Barras fora de destaque |
+| `--paro-grafico-neutro` | `#D9D3C0` | `#4A4842` | Segmento neutro de gráfico |
+
+O mapa tem cores próprias (`--paro-mapa-*`): fundo `#EEE7D2`, quadras `#E6DEC5`, praças `#DCE2D2`, vias `#FFFCF2` com contorno `#DDD3B7` e marcadores `#FFFDF5`. No tema escuro, todas mudam junto com os demais tokens.
+
+O tema escuro vale pelo sistema ou por `data-tema="escuro"` na raiz do documento; `data-tema="claro"` força o claro.
+
+### Padrões de ocupação em CSS
+
+O `paro.css` traz as classes `.paro-padrao` e `.paro-padrao--livre`, `--apertado`, `--lotado` e `--sem-dado`, com os valores do Figma: hachura a 45° com traço de 1,2 px a cada 5 px (apertado) ou 2,8 px (lotado) e contorno tracejado 4/3 (sem dado). O Tailwind ganha as utilitárias `padrao-livre`, `padrao-apertado`, `padrao-lotado` e `padrao-sem-dado`. Sempre com o rótulo textual ao lado.
 
 Sem sombras pesadas. Uma borda de 1 px em `--paro-borda` separa melhor e carrega mais rápido.
 

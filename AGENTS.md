@@ -27,13 +27,13 @@ Ponto essencial: o Parô entrega **previsão**, não garantia. Nenhum texto, tel
 
 ## Logotipo
 
-| Situação | Arquivo |
-|---|---|
-| Fundo creme, claro ou branco | `logo/logo-paro-fundo-claro.svg` |
-| Fundo asfalto, azul ou fotografia | `logo/logo-paro-fundo-escuro.svg` |
-| Impressão em uma cor, fundo claro | `logo/logo-monocromatica-preta.svg` |
+| Situação                           | Arquivo                              |
+| ---------------------------------- | ------------------------------------ |
+| Fundo creme, claro ou branco       | `logo/logo-paro-fundo-claro.svg`     |
+| Fundo asfalto, azul ou fotografia  | `logo/logo-paro-fundo-escuro.svg`    |
+| Impressão em uma cor, fundo claro  | `logo/logo-monocromatica-preta.svg`  |
 | Impressão em uma cor, fundo escuro | `logo/logo-monocromatica-branca.svg` |
-| Avatar, ícone, cabeçalho compacto | `simbolo/volante.svg` |
+| Avatar, ícone, cabeçalho compacto  | `simbolo/volante.svg`                |
 
 Largura mínima de 120 px no digital. Abaixo disso, use o símbolo. Área livre de 2x ao redor, sendo x a altura do circunflexo.
 
@@ -68,15 +68,19 @@ Sem dado    trecho não medido     tracejado + rótulo
 
 ## Tipografia
 
-**Satoshi** é a família única: títulos, corpo, interface, tabelas. **JetBrains Mono** apenas para código e dados tabulares.
+**Manrope** é a família única: títulos, corpo, interface, tabelas. **JetBrains Mono** apenas para código e dados tabulares.
 
-Para etiquetas e rótulos de canto, use Satoshi Bold em caixa alta com `letter-spacing: 0.18em`. Nunca aplique isso em texto corrido.
+Para etiquetas e rótulos de canto, use Manrope Bold 11 px em caixa alta com `letter-spacing: 0.145em` (a classe `.paro-etiqueta`). Nunca aplique isso em texto corrido.
 
-Carregamento via CDN:
+Carregamento pelo Google Fonts:
 
 ```html
-<link rel="preconnect" href="https://api.fontshare.com">
-<link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Manrope:wght@300..800&display=swap"
+  rel="stylesheet"
+/>
 ```
 
 Ou localmente, com `<link rel="stylesheet" href="fontes/fontes.css">` após baixar os arquivos conforme o `fontes/LEIAME.md`.
@@ -85,13 +89,13 @@ Ou localmente, com `<link rel="stylesheet" href="fontes/fontes.css">` após baix
 
 ## Grafismos
 
-| Arquivo | Uso |
-|---|---|
-| `detalhe-1-malha` | Fundo de seção, capa, textura ampla |
-| `detalhe-2-isolinhas` | Capa, abertura de seção, densidade |
-| `detalhe-3-acento` | Textura de fundo, papelaria |
-| `detalhe-4-radar` | Carregamento, ícone de seção |
-| `detalhe-5-baias` | Rodapé, divisor, cabeçalho |
+| Arquivo               | Uso                                 |
+| --------------------- | ----------------------------------- |
+| `detalhe-1-malha`     | Fundo de seção, capa, textura ampla |
+| `detalhe-2-isolinhas` | Capa, abertura de seção, densidade  |
+| `detalhe-3-acento`    | Textura de fundo, papelaria         |
+| `detalhe-4-radar`     | Carregamento, ícone de seção        |
+| `detalhe-5-baias`     | Rodapé, divisor, cabeçalho          |
 
 Um grafismo por tela. Grafismos de fundo entre 8% e 15% de opacidade. Nunca atrás de tabela ou texto corrido. Abaixo de 200 px de largura, o traço fino desaparece: aumente a espessura ou troque de grafismo.
 
@@ -106,9 +110,9 @@ Direto e prestativo, sem infantilizar. O usuário está com pressa.
 - Escreva: "70% de chance de vaga às 19h"
 - Não escreva: "Poxa, parece que tá difícil por aqui!"
 
-Sempre exponha a incerteza. *Provavelmente cheio* é honesto; *cheio* é uma afirmação que os dados de campo não sustentam.
+Sempre exponha a incerteza. _Provavelmente cheio_ é honesto; _cheio_ é uma afirmação que os dados de campo não sustentam.
 
-Frases aprovadas da marca: *Menos volta, mais vaga.* · *Chegue sabendo.* · *A gente não cria vagas. A gente mostra onde elas estão.*
+Frases aprovadas da marca: _Menos volta, mais vaga._ · _Chegue sabendo._ · _A gente não cria vagas. A gente mostra onde elas estão._
 
 ---
 
@@ -137,7 +141,7 @@ O projeto é acadêmico e trata de coleta com pessoas. Ao gerar formulários, te
 Crie a tela de resultado do Parô usando a identidade oficial.
 
 Antes de começar, leia o README.md, o AGENTS.md e o DESIGN.md de:
-https://github.com/SEU-USUARIO/paro-brand
+https://github.com/otaviools/paro-brand
 
 Use somente os arquivos oficiais do repositório e siga as regras de
 logotipo, cores, tipografia, grafismos e acessibilidade.

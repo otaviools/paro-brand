@@ -18,7 +18,7 @@ This repository is public to give the team, professors and reviewers easy access
 
 ## Fonts
 
-**Satoshi** belongs to the Indian Type Foundry and is distributed by [Fontshare](https://www.fontshare.com/fonts/satoshi). **JetBrains Mono** uses the [SIL Open Font License 1.1](https://openfontlicense.org/).
+**Manrope**, by Mikhail Sharanda, uses the [SIL Open Font License 1.1](https://openfontlicense.org/) and is distributed by [Google Fonts](https://fonts.google.com/specimen/Manrope). **JetBrains Mono** uses the [SIL Open Font License 1.1](https://openfontlicense.org/).
 
 Font files are not versioned in this repository. See `fontes/LEIAME.md`.
 

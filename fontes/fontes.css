@@ -1,59 +1,19 @@
 /* Parô — declarações de fonte
-   Família única: Satoshi (Indian Type Foundry / Fontshare)
+   Família única: Manrope (Mikhail Sharanda, SIL OFL 1.1)
    Monoespaçada: JetBrains Mono (JetBrains, SIL OFL 1.1)
 
-   OPÇÃO 1 — CDN da Fontshare (mais simples, requer internet):
+   OPÇÃO 1 — Google Fonts (mais simples, requer internet):
    Use a tag <link> indicada no README e ignore este arquivo.
 
    OPÇÃO 2 — arquivos locais (recomendado para o protótipo):
-   Baixe os .woff2 em https://www.fontshare.com/fonts/satoshi
-   e coloque nesta pasta. As declarações abaixo já os referenciam. */
+   Baixe o Manrope-Variable.woff2 conforme o LEIAME.md
+   e coloque nesta pasta. As declarações abaixo já o referenciam. */
 
 @font-face {
-  font-family: "Satoshi";
-  src: url("Satoshi-Light.woff2") format("woff2");
-  font-weight: 300;
+  font-family: "Manrope";
+  src: url("Manrope-Variable.woff2") format("woff2");
+  font-weight: 200 800;
   font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Satoshi";
-  src: url("Satoshi-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Satoshi";
-  src: url("Satoshi-Medium.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Satoshi";
-  src: url("Satoshi-Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Satoshi";
-  src: url("Satoshi-Black.woff2") format("woff2");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Satoshi";
-  src: url("Satoshi-Italic.woff2") format("woff2");
-  font-weight: 400;
-  font-style: italic;
   font-display: swap;
 }
 

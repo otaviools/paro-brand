@@ -187,48 +187,58 @@ Em produtos digitais, valide o contraste pela WCAG. O `Azul Parô` funciona no l
 
 ## Tipografia
 
-| Família            | Uso                                                                                                                                                                      |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Satoshi**        | Família única da marca: títulos, chamadas, parágrafos, interface, tabelas e formulários. Grotesca de construção geométrica, em diálogo direto com o desenho do logotipo. |
-| **JetBrains Mono** | Código, comandos, logs e dados monoespaçados.                                                                                                                            |
+| Família            | Uso                                                                                                                                                |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Manrope**        | Família única da marca: títulos, chamadas, parágrafos, interface, tabelas e formulários. Grotesca geométrica e aberta, legível em telas pequenas. |
+| **JetBrains Mono** | Código, comandos, logs e dados monoespaçados.                                                                                                      |
 
 Não use JetBrains Mono em títulos ou texto corrido.
 
 ### Pesos
 
-| Peso        | Quando usar                                                |
-| ----------- | ---------------------------------------------------------- |
-| Light 300   | Subtítulos grandes, em fundo limpo. Evite abaixo de 18 px. |
-| Regular 400 | Corpo, legendas, rótulos                                   |
-| Medium 500  | Nome de rua, ênfase leve, itens de menu                    |
-| Bold 700    | Títulos, botões, etiquetas em caixa alta                   |
-| Black 900   | Apenas percentuais grandes e números de destaque           |
+| Peso          | Quando usar                                                |
+| ------------- | ---------------------------------------------------------- |
+| Light 300     | Subtítulos grandes, em fundo limpo. Evite abaixo de 18 px. |
+| Regular 400   | Notas de rodapé e textos longos                            |
+| Medium 500    | Corpo, legendas, itens de menu e abas                      |
+| SemiBold 600  | Seletor de local, nomes de rua no mapa                     |
+| Bold 700      | Títulos, botões, nomes de rua, etiquetas em caixa alta     |
+| ExtraBold 800 | Apenas percentuais e números de destaque                   |
 
 ### Escala
 
-| Uso                 | Tamanho | Peso                      | Altura de linha |
-| ------------------- | ------- | ------------------------- | --------------- |
-| Título de página    | 36 px   | 700 Bold                  | 1.2             |
-| Título de seção     | 24 px   | 700 Bold                  | 1.2             |
-| Nome da rua         | 18 px   | 500 Medium                | 1.4             |
-| Corpo               | 16 px   | 400 Regular               | 1.5             |
-| Legenda, rótulo     | 14 px   | 400 Regular               | 1.5             |
-| Etiqueta caixa alta | 12 px   | 700 Bold, tracking 0.18em | 1.4             |
-| Percentual grande   | 48 px   | 900 Black                 | 1.0             |
+Valores das telas do Figma. Cada linha tem um token `--paro-texto-*` no [paro.css](tokens/paro.css).
+
+| Uso                               | Tamanho | Peso                       |
+| --------------------------------- | ------- | -------------------------- |
+| Percentual de destaque (desktop)  | 56 px   | 800 ExtraBold              |
+| Percentual grande (mobile)        | 48 px   | 800 ExtraBold              |
+| Indicador de painel               | 40 px   | 800 ExtraBold              |
+| Título de página                  | 26 px   | 700 Bold                   |
+| Número de stat, título de detalhe | 22 px   | 800 ExtraBold ou 700 Bold  |
+| Botão principal (mobile)          | 18 px   | 700 Bold                   |
+| Título de card                    | 17 px   | 700 Bold                   |
+| Corpo, nome da rua na lista       | 15 px   | 500 Medium ou 700 Bold     |
+| Menu, abas, campos                | 14 px   | 500 Medium                 |
+| Subtítulo, legenda, badge         | 13 px   | 500 Medium                 |
+| Nota de rodapé, eixo de gráfico   | 12 px   | 400 Regular                |
+| Etiqueta caixa alta               | 11 px   | 700 Bold, tracking 0.145em |
+
+A escala completa, com número de card (28 px), botão secundário (16 px) e nome de rua no mapa (10 px), está no [DESIGN.md](DESIGN.md).
 
 Nunca centralize texto corrido. Máximo de 70 caracteres por linha em parágrafos.
 
 ### Etiquetas
 
-A capa usa caixa alta com entreletra bem aberta nas frases de canto. Esse tratamento é um recurso da marca, não uma fonte diferente: Satoshi Bold, `text-transform: uppercase`, `letter-spacing: 0.18em`, corpo pequeno.
+A capa usa caixa alta com entreletra bem aberta nas frases de canto. Esse tratamento é um recurso da marca, não uma fonte diferente: Manrope Bold, `text-transform: uppercase`, `letter-spacing: 0.145em`, corpo de 11 px.
 
 ```css
 .paro-etiqueta {
-  font-family: "Satoshi", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.18em;
-  font-size: 0.75rem;
+  letter-spacing: 0.145em;
+  font-size: 11px;
 }
 ```
 
@@ -236,12 +246,13 @@ Reserve para etiquetas, rótulos de canto e chamadas curtas. Nunca em texto corr
 
 ### Como usar as fontes
 
-**Opção 1 — CDN da Fontshare.** Mais simples, requer internet:
+**Opção 1 — Google Fonts.** Mais simples, requer internet:
 
 ```html
-<link rel="preconnect" href="https://api.fontshare.com" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link
-  href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700,900&display=swap"
+  href="https://fonts.googleapis.com/css2?family=Manrope:wght@300..800&display=swap"
   rel="stylesheet"
 />
 ```
@@ -252,9 +263,9 @@ Reserve para etiquetas, rótulos de canto e chamadas curtas. Nunca em texto corr
 <link rel="stylesheet" href="fontes/fontes.css" />
 ```
 
-Os arquivos de fonte **não estão versionados** aqui, por serem binários pesados e de licenciamento de terceiros. Baixe em [fontshare.com/fonts/satoshi](https://www.fontshare.com/fonts/satoshi) e coloque os `.woff2` na pasta [fontes/](fontes) — o `fontes.css` já os referencia. Instruções completas em [fontes/LEIAME.md](fontes/LEIAME.md).
+Os arquivos de fonte **não estão versionados** aqui, por serem binários pesados. Gere o `Manrope-Variable.woff2` a partir da fonte variável do Google Fonts e coloque na pasta [fontes/](fontes) — o `fontes.css` já o referencia. Instruções completas em [fontes/LEIAME.md](fontes/LEIAME.md).
 
-Para instalar no computador e usar em Figma, Canva ou PowerPoint, baixe também os `.otf` ou `.ttf`.
+Para instalar no computador e usar em Figma, Canva ou PowerPoint, baixe também os `.ttf`.
 
 Evite pesos leves em tamanhos pequenos, fundos complexos ou baixa resolução.
 
@@ -277,7 +288,7 @@ Exemplo com CSS:
 
 .card-rua {
   background: var(--paro-superficie);
-  border-radius: var(--paro-raio-md);
+  border-radius: var(--paro-raio-card);
   font-family: var(--paro-fonte);
   border: var(--paro-borda);
   padding: var(--paro-esp-4);
@@ -409,4 +420,4 @@ Este repositório é público para facilitar o acesso da equipe, de professores 
 
 Termos completos em [LICENCA.md](LICENCA.md), em português, e [LICENSE.md](LICENSE.md), em inglês.
 
-As fontes são de terceiros: **Satoshi** pertence à Indian Type Foundry e é distribuída pela [Fontshare](https://www.fontshare.com/fonts/satoshi); **JetBrains Mono** usa a [SIL Open Font License 1.1](https://openfontlicense.org/).
+As fontes são de terceiros e usam a [SIL Open Font License 1.1](https://openfontlicense.org/): **Manrope**, de Mikhail Sharanda, e **JetBrains Mono**, da JetBrains.

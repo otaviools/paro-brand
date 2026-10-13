@@ -47,8 +47,14 @@
       "azul": {
         "$type": "gradient",
         "$value": [
-          { "color": "#6EA8FF", "position": 0 },
-          { "color": "#3D74D6", "position": 1 }
+          {
+            "color": "#6EA8FF",
+            "position": 0
+          },
+          {
+            "color": "#3D74D6",
+            "position": 1
+          }
         ],
         "$description": "Degradê de azul (135°), do destaque ao azul de texto. Fundos e realces. Nunca sobre logotipo, símbolo ou grafismos"
       }
@@ -57,7 +63,7 @@
       "principal": {
         "$type": "fontFamily",
         "$value": [
-          "Satoshi",
+          "Manrope",
           "system-ui",
           "sans-serif"
         ]
@@ -84,13 +90,17 @@
         "$type": "fontWeight",
         "$value": 500
       },
+      "semibold": {
+        "$type": "fontWeight",
+        "$value": 600
+      },
       "bold": {
         "$type": "fontWeight",
         "$value": 700
       },
-      "black": {
+      "extrabold": {
         "$type": "fontWeight",
-        "$value": 900
+        "$value": 800
       }
     },
     "espaco": {
@@ -109,6 +119,10 @@
       "4": {
         "$type": "dimension",
         "$value": "16px"
+      },
+      "5": {
+        "$type": "dimension",
+        "$value": "20px"
       },
       "6": {
         "$type": "dimension",
@@ -143,6 +157,297 @@
       "full": {
         "$type": "dimension",
         "$value": "9999px"
+      },
+      "badge": {
+        "$type": "dimension",
+        "$value": "8px",
+        "$description": "Badges, abas internas e padrões de ocupação"
+      },
+      "botao": {
+        "$type": "dimension",
+        "$value": "10px",
+        "$description": "Botões, campos, selects e itens de menu"
+      },
+      "alerta": {
+        "$type": "dimension",
+        "$value": "12px",
+        "$description": "Alertas, stats e textareas"
+      },
+      "lista": {
+        "$type": "dimension",
+        "$value": "14px",
+        "$description": "Card de lista de ruas"
+      },
+      "card": {
+        "$type": "dimension",
+        "$value": "16px",
+        "$description": "Cards, hero e mapa"
+      }
+    },
+    "cor-produto": {
+      "creme-card": {
+        "$type": "color",
+        "$value": "#FFFCF2",
+        "$description": "Cards, barra lateral e campos no tema claro"
+      },
+      "creme-suave": {
+        "$type": "color",
+        "$value": "#F3ECD4",
+        "$description": "Botão soft, stats, fundo de abas e cabeçalho de tabela"
+      },
+      "creme-neutro": {
+        "$type": "color",
+        "$value": "#D9D3C0",
+        "$description": "Segmento neutro de gráfico"
+      },
+      "pedra": {
+        "$type": "color",
+        "$value": "#8F8A7E",
+        "$description": "Nomes de rua no mapa, texto terciário"
+      },
+      "azul-barra": {
+        "$type": "color",
+        "$value": "#8CB0EE",
+        "$description": "Barras de gráfico fora de destaque"
+      },
+      "asfalto-card": {
+        "$type": "color",
+        "$value": "#3E3D37",
+        "$description": "Cards no tema escuro"
+      },
+      "asfalto-suave": {
+        "$type": "color",
+        "$value": "#47463F",
+        "$description": "Botão soft, stats e abas no tema escuro"
+      },
+      "asfalto-neutro": {
+        "$type": "color",
+        "$value": "#4A4842",
+        "$description": "Segmento neutro de gráfico no tema escuro"
+      },
+      "asfalto-fraco": {
+        "$type": "color",
+        "$value": "#A8A69C",
+        "$description": "Texto secundário no tema escuro"
+      },
+      "pedra-escura": {
+        "$type": "color",
+        "$value": "#9C998E",
+        "$description": "Texto terciário no tema escuro"
+      },
+      "azul-barra-escuro": {
+        "$type": "color",
+        "$value": "#4F79BF",
+        "$description": "Barras de gráfico fora de destaque no tema escuro"
+      },
+      "ceu-noite": {
+        "$type": "color",
+        "$value": "#4A5558",
+        "$description": "Item ativo, badges e alertas no tema escuro"
+      }
+    },
+    "cor-mapa": {
+      "fundo": {
+        "$type": "color",
+        "$value": "#EEE7D2",
+        "$description": "Fundo do mapa"
+      },
+      "quadra": {
+        "$type": "color",
+        "$value": "#E6DEC5",
+        "$description": "Quadras e edificações"
+      },
+      "parque": {
+        "$type": "color",
+        "$value": "#DCE2D2",
+        "$description": "Praças e áreas verdes"
+      },
+      "via": {
+        "$type": "color",
+        "$value": "#FFFCF2",
+        "$description": "Vias"
+      },
+      "meio-fio": {
+        "$type": "color",
+        "$value": "#DDD3B7",
+        "$description": "Contorno das vias"
+      },
+      "marcador": {
+        "$type": "color",
+        "$value": "#FFFDF5",
+        "$description": "Fundo dos marcadores de rua"
+      },
+      "anel": {
+        "$type": "color",
+        "$value": "#FFFFFF",
+        "$description": "Anel dos marcadores de posição"
+      }
+    },
+    "tamanho": {
+      "hero": {
+        "$type": "dimension",
+        "$value": "56px",
+        "$description": "Percentual de destaque no desktop, ExtraBold"
+      },
+      "percentual": {
+        "$type": "dimension",
+        "$value": "48px",
+        "$description": "Percentual grande no mobile, ExtraBold"
+      },
+      "kpi": {
+        "$type": "dimension",
+        "$value": "40px",
+        "$description": "Indicador de painel, ExtraBold"
+      },
+      "numero": {
+        "$type": "dimension",
+        "$value": "28px",
+        "$description": "Número de card, ExtraBold"
+      },
+      "titulo": {
+        "$type": "dimension",
+        "$value": "26px",
+        "$description": "Título de página, Bold"
+      },
+      "stat": {
+        "$type": "dimension",
+        "$value": "22px",
+        "$description": "Número de stat e título de detalhe"
+      },
+      "botao": {
+        "$type": "dimension",
+        "$value": "18px",
+        "$description": "Botão principal no mobile, Bold"
+      },
+      "card": {
+        "$type": "dimension",
+        "$value": "17px",
+        "$description": "Título de card"
+      },
+      "destaque": {
+        "$type": "dimension",
+        "$value": "16px",
+        "$description": "Botão secundário e seletor de local"
+      },
+      "corpo": {
+        "$type": "dimension",
+        "$value": "15px",
+        "$description": "Corpo e nome da rua na lista"
+      },
+      "interface": {
+        "$type": "dimension",
+        "$value": "14px",
+        "$description": "Menu, abas e campos"
+      },
+      "legenda": {
+        "$type": "dimension",
+        "$value": "13px",
+        "$description": "Subtítulo, legenda e badge"
+      },
+      "nota": {
+        "$type": "dimension",
+        "$value": "12px",
+        "$description": "Nota de rodapé e eixo de gráfico"
+      },
+      "etiqueta": {
+        "$type": "dimension",
+        "$value": "11px",
+        "$description": "Etiqueta caixa alta, Bold, tracking 0.145em"
+      },
+      "mapa": {
+        "$type": "dimension",
+        "$value": "10px",
+        "$description": "Nome de rua no mapa, SemiBold"
+      }
+    },
+    "layout": {
+      "margem-mobile": {
+        "$type": "dimension",
+        "$value": "24px"
+      },
+      "margem-desktop": {
+        "$type": "dimension",
+        "$value": "32px"
+      },
+      "largura-mobile": {
+        "$type": "dimension",
+        "$value": "393px",
+        "$description": "Frame mobile do Figma"
+      },
+      "largura-desktop": {
+        "$type": "dimension",
+        "$value": "1440px",
+        "$description": "Frame desktop do Figma"
+      },
+      "sidebar": {
+        "$type": "dimension",
+        "$value": "248px"
+      },
+      "navbar": {
+        "$type": "dimension",
+        "$value": "88px"
+      },
+      "tabbar": {
+        "$type": "dimension",
+        "$value": "96px"
+      }
+    },
+    "altura": {
+      "botao-mobile": {
+        "$type": "dimension",
+        "$value": "56px"
+      },
+      "botao": {
+        "$type": "dimension",
+        "$value": "44px"
+      },
+      "botao-icone": {
+        "$type": "dimension",
+        "$value": "40px"
+      },
+      "campo-mobile": {
+        "$type": "dimension",
+        "$value": "52px"
+      },
+      "campo": {
+        "$type": "dimension",
+        "$value": "40px"
+      },
+      "abas": {
+        "$type": "dimension",
+        "$value": "40px"
+      },
+      "badge": {
+        "$type": "dimension",
+        "$value": "28px"
+      }
+    },
+    "padrao-ocupacao": {
+      "traco": {
+        "$type": "dimension",
+        "$value": "1.2px",
+        "$description": "Espessura do traço e do contorno"
+      },
+      "diagonal-passo": {
+        "$type": "dimension",
+        "$value": "3.54px",
+        "$description": "Apertado: traço a 45° a cada 5px na horizontal"
+      },
+      "densa-passo": {
+        "$type": "dimension",
+        "$value": "1.98px",
+        "$description": "Lotado: traço a 45° a cada 2,8px na horizontal"
+      },
+      "tracejado": {
+        "$type": "strokeStyle",
+        "$value": {
+          "dashArray": [
+            "4px",
+            "3px"
+          ],
+          "lineCap": "butt"
+        },
+        "$description": "Sem dado: contorno tracejado com 1,5px"
       }
     }
   }

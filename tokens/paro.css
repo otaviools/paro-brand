@@ -1,5 +1,7 @@
 /* Parô — tokens de design
-   Paleta extraída da capa oficial do projeto.
+   Paleta extraída da capa oficial do projeto. Camada de produto,
+   tamanhos e padrões de ocupação extraídos das telas do Figma
+   (páginas Produto Mobile e Produto Desktop).
    Uso: @import url("tokens/paro.css"); */
 
 :root {
@@ -13,25 +15,92 @@
   --paro-concreto:       #75746E;
   --paro-asfalto:        #32312C;
 
+  /* --- Cores de produto (Figma) ---
+     Tons quentes derivados do creme e do asfalto. Só em interface,
+     nunca no logotipo, símbolo ou grafismos. */
+  --paro-creme-card:     #FFFCF2;
+  --paro-creme-suave:    #F3ECD4;
+  --paro-creme-neutro:   #D9D3C0;
+  --paro-pedra:          #8F8A7E;
+  --paro-azul-barra:     #8CB0EE;
+  --paro-asfalto-card:   #3E3D37;
+  --paro-asfalto-suave:  #47463F;
+  --paro-asfalto-neutro: #4A4842;
+  --paro-asfalto-fraco:  #A8A69C;
+  --paro-pedra-escura:   #9C998E;
+  --paro-azul-barra-escuro: #4F79BF;
+  --paro-ceu-noite:      #4A5558;
+
+  /* --- Cores do mapa (Figma, basemap Positron em creme) --- */
+  --paro-mapa-fundo:     #EEE7D2;
+  --paro-mapa-quadra:    #E6DEC5;
+  --paro-mapa-parque:    #DCE2D2;
+  --paro-mapa-via:       #FFFCF2;
+  --paro-mapa-meio-fio:  #DDD3B7;
+  --paro-mapa-marcador:  #FFFDF5;
+  --paro-mapa-anel:      #FFFFFF;
+  --paro-mapa-controle:  rgba(255, 251, 240, 0.85);
+
   /* --- Degradê de azul ---
      Do azul de destaque ao azul de texto. Para fundos e realces.
      Nunca sobre o logotipo, símbolo ou grafismos. */
   --paro-degrade-azul:   linear-gradient(135deg, #6EA8FF 0%, #3D74D6 100%);
 
   /* --- Tipografia --- */
-  --paro-fonte: "Satoshi", system-ui, sans-serif;
+  --paro-fonte: "Manrope", system-ui, sans-serif;
   --paro-fonte-mono: "JetBrains Mono", ui-monospace, monospace;
-  --paro-tracking-etiqueta: 0.18em;
+  --paro-tracking-etiqueta: 0.145em;
+
+  --paro-peso-regular:   400;
+  --paro-peso-medium:    500;
+  --paro-peso-semibold:  600;
+  --paro-peso-bold:      700;
+  --paro-peso-extrabold: 800;
+
+  /* Escala usada no Figma, do maior para o menor */
+  --paro-texto-hero:     56px;  /* percentual de destaque no desktop, ExtraBold */
+  --paro-texto-percentual: 48px; /* percentual grande no mobile, ExtraBold */
+  --paro-texto-kpi:      40px;  /* indicador de painel, ExtraBold */
+  --paro-texto-numero:   28px;  /* número de card, ExtraBold */
+  --paro-texto-titulo:   26px;  /* título de página, Bold */
+  --paro-texto-stat:     22px;  /* número de stat e título de detalhe */
+  --paro-texto-botao:    18px;  /* botão principal no mobile, Bold */
+  --paro-texto-card:     17px;  /* título de card e percentual de lista */
+  --paro-texto-destaque: 16px;  /* botão secundário, local, Bold ou SemiBold */
+  --paro-texto-corpo:    15px;  /* corpo, nome da rua na lista, Medium ou Bold */
+  --paro-texto-interface: 14px; /* menu, abas, campos */
+  --paro-texto-legenda:  13px;  /* subtítulo, legenda, badge */
+  --paro-texto-nota:     12px;  /* nota de rodapé, eixo de gráfico */
+  --paro-texto-etiqueta: 11px;  /* etiqueta caixa alta, Bold */
+  --paro-texto-mapa:     10px;  /* nome de rua no mapa, SemiBold */
 
   /* --- Espaçamento (escala de 4px) --- */
   --paro-esp-1:  4px;
   --paro-esp-2:  8px;
   --paro-esp-3:  12px;
   --paro-esp-4:  16px;
+  --paro-esp-5:  20px;
   --paro-esp-6:  24px;
   --paro-esp-8:  32px;
   --paro-esp-12: 48px;
   --paro-esp-16: 64px;
+
+  --paro-margem-mobile:  24px;
+  --paro-margem-desktop: 32px;
+  --paro-largura-mobile: 393px;
+  --paro-largura-desktop: 1440px;
+  --paro-largura-sidebar: 248px;
+  --paro-altura-navbar:  88px;
+  --paro-altura-tabbar:  96px;
+
+  /* --- Alturas de controle (Figma) --- */
+  --paro-altura-botao-mobile:  56px;
+  --paro-altura-botao:         44px;
+  --paro-altura-botao-icone:   40px;
+  --paro-altura-campo-mobile:  52px;
+  --paro-altura-campo:         40px;
+  --paro-altura-abas:          40px;
+  --paro-altura-badge:         28px;
 
   /* --- Raios --- */
   --paro-raio-sm:   8px;
@@ -39,33 +108,151 @@
   --paro-raio-lg:   16px;
   --paro-raio-full: 9999px;
 
-  --paro-borda: 1px solid rgba(50, 49, 44, 0.12);
+  --paro-raio-badge:   8px;   /* badges, abas internas, padrões de ocupação */
+  --paro-raio-botao:   10px;  /* botões, campos, selects, itens de menu */
+  --paro-raio-alerta:  12px;  /* alertas, stats, textareas */
+  --paro-raio-lista:   14px;  /* card de lista de ruas */
+  --paro-raio-card:    16px;  /* cards, hero, mapa */
+
+  /* --- Padrões de ocupação (Figma) ---
+     Hachura a 45° subindo para a direita, traço de 1,2px.
+     Diagonal: um traço a cada 5px na horizontal (3,54px na perpendicular).
+     Densa: um traço a cada 2,8px na horizontal (1,98px na perpendicular).
+     Sem dado: contorno tracejado 4/3 com 1,5px. */
+  --paro-padrao-traco-largura: 1.2px;
+  --paro-padrao-diagonal-passo: 3.54px;
+  --paro-padrao-densa-passo: 1.98px;
+  --paro-padrao-tracejado: 4px 3px;
+
+  /* --- Semânticos, tema claro --- */
+  --paro-fundo:          var(--paro-creme);
+  --paro-superficie:     var(--paro-creme-card);
+  --paro-superficie-suave: var(--paro-creme-suave);
+  --paro-superficie-ativa: var(--paro-ceu-claro);
+  --paro-texto:          var(--paro-asfalto);
+  --paro-texto-fraco:    var(--paro-concreto);
+  --paro-texto-terciario: var(--paro-pedra);
+  --paro-acao:           var(--paro-azul-texto);
+  --paro-acao-texto:     var(--paro-creme);
+  --paro-link:           var(--paro-azul-texto);
+  --paro-grafico-barra:  var(--paro-azul-barra);
+  --paro-grafico-destaque: var(--paro-azul-texto);
+  --paro-grafico-neutro: var(--paro-creme-neutro);
+  --paro-padrao-traco:   var(--paro-asfalto);
+  --paro-padrao-fundo:   var(--paro-creme);
+  --paro-linha:          rgba(50, 49, 44, 0.15);
+  --paro-separador:      rgba(50, 49, 44, 0.10);
+  --paro-borda:          1px solid var(--paro-linha);
+}
+
+/* --- Tema escuro (Figma, seções "escuro") ---
+   Vale pelo sistema ou por data-tema="escuro" na raiz. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-tema="claro"]) {
+    --paro-fundo:          var(--paro-asfalto);
+    --paro-superficie:     var(--paro-asfalto-card);
+    --paro-superficie-suave: var(--paro-asfalto-suave);
+    --paro-superficie-ativa: var(--paro-ceu-noite);
+    --paro-texto:          var(--paro-creme);
+    --paro-texto-fraco:    var(--paro-asfalto-fraco);
+    --paro-texto-terciario: var(--paro-pedra-escura);
+    --paro-acao:           var(--paro-azul);
+    --paro-acao-texto:     var(--paro-asfalto);
+    --paro-link:           var(--paro-azul);
+    --paro-grafico-barra:  var(--paro-azul-barra-escuro);
+    --paro-grafico-destaque: var(--paro-azul);
+    --paro-grafico-neutro: var(--paro-asfalto-neutro);
+    --paro-padrao-traco:   var(--paro-creme);
+    --paro-padrao-fundo:   var(--paro-asfalto);
+    --paro-linha:          rgba(255, 249, 227, 0.15);
+    --paro-separador:      rgba(255, 249, 227, 0.10);
+    --paro-mapa-fundo:     #47463F;
+    --paro-mapa-quadra:    #3A3934;
+    --paro-mapa-parque:    #3A4240;
+    --paro-mapa-via:       #3E3D37;
+    --paro-mapa-meio-fio:  #4A4842;
+    --paro-mapa-marcador:  #3E3D37;
+    --paro-mapa-anel:      #3E3D37;
+    --paro-mapa-controle:  rgba(62, 61, 55, 0.85);
+  }
+}
+
+:root[data-tema="escuro"] {
+  --paro-fundo:          var(--paro-asfalto);
+  --paro-superficie:     var(--paro-asfalto-card);
+  --paro-superficie-suave: var(--paro-asfalto-suave);
+  --paro-superficie-ativa: var(--paro-ceu-noite);
+  --paro-texto:          var(--paro-creme);
+  --paro-texto-fraco:    var(--paro-asfalto-fraco);
+  --paro-texto-terciario: var(--paro-pedra-escura);
+  --paro-acao:           var(--paro-azul);
+  --paro-acao-texto:     var(--paro-asfalto);
+  --paro-link:           var(--paro-azul);
+  --paro-grafico-barra:  var(--paro-azul-barra-escuro);
+  --paro-grafico-destaque: var(--paro-azul);
+  --paro-grafico-neutro: var(--paro-asfalto-neutro);
+  --paro-padrao-traco:   var(--paro-creme);
+  --paro-padrao-fundo:   var(--paro-asfalto);
+  --paro-linha:          rgba(255, 249, 227, 0.15);
+  --paro-separador:      rgba(255, 249, 227, 0.10);
+  --paro-mapa-fundo:     #47463F;
+  --paro-mapa-quadra:    #3A3934;
+  --paro-mapa-parque:    #3A4240;
+  --paro-mapa-via:       #3E3D37;
+  --paro-mapa-meio-fio:  #4A4842;
+  --paro-mapa-marcador:  #3E3D37;
+  --paro-mapa-anel:      #3E3D37;
+  --paro-mapa-controle:  rgba(62, 61, 55, 0.85);
 }
 
 /* Etiqueta: caixa alta com entreletra aberta, como na capa */
 .paro-etiqueta {
   font-family: var(--paro-fonte);
-  font-weight: 700;
+  font-weight: var(--paro-peso-bold);
   text-transform: uppercase;
   letter-spacing: var(--paro-tracking-etiqueta);
-  font-size: 0.75rem;
+  font-size: var(--paro-texto-etiqueta);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --paro-fundo:       var(--paro-asfalto);
-    --paro-superficie:  #3E3D37;
-    --paro-texto:       var(--paro-creme);
-    --paro-texto-fraco: #A8A69C;
-    --paro-borda: 1px solid rgba(255, 249, 227, 0.14);
-  }
+/* Padrões de ocupação: sempre acompanhados do rótulo textual.
+   Uso: <span class="paro-padrao paro-padrao--apertado"></span> Apertado */
+.paro-padrao {
+  display: inline-block;
+  inline-size: 36px;
+  block-size: 36px;
+  border: var(--paro-padrao-traco-largura) solid var(--paro-padrao-traco);
+  border-radius: var(--paro-raio-badge);
+  background-color: var(--paro-padrao-fundo);
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --paro-fundo:       var(--paro-creme);
-    --paro-superficie:  #FFFFFF;
-    --paro-texto:       var(--paro-asfalto);
-    --paro-texto-fraco: #6B6A63;
-  }
+.paro-padrao--pequeno {
+  inline-size: 14px;
+  block-size: 14px;
+  border-radius: 3px;
+}
+
+.paro-padrao--livre {
+  background-color: var(--paro-padrao-traco);
+}
+
+.paro-padrao--apertado {
+  background-image: repeating-linear-gradient(
+    135deg,
+    var(--paro-padrao-traco) 0 var(--paro-padrao-traco-largura),
+    transparent var(--paro-padrao-traco-largura) var(--paro-padrao-diagonal-passo)
+  );
+}
+
+.paro-padrao--lotado {
+  background-image: repeating-linear-gradient(
+    135deg,
+    var(--paro-padrao-traco) 0 var(--paro-padrao-traco-largura),
+    transparent var(--paro-padrao-traco-largura) var(--paro-padrao-densa-passo)
+  );
+}
+
+.paro-padrao--sem-dado {
+  border-width: 1.5px;
+  border-style: dashed;
+  background-color: transparent;
 }
